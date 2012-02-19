@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alumnos</string>
+    <string name="lblNombres">Nombres:</string>
+    <string name="lblAppaterno">Ap. Paterno:</string>
+    <string name="lblApmaterno">Ap. Materno:</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnAnterior">Anterior</string>
+    <string name="btnEliminar">Eliminar</string>
+
+</resources>

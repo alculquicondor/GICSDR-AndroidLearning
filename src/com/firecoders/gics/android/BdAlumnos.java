@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class BdAlumnos extends SQLiteOpenHelper {
-	
+
 	String sqlCrearBd = "CREATE TABLE persona(id  integer primary key, nombres TEXT, appaterno TEXT, apmaterno TEXT)";
 
 	public BdAlumnos(Context context, String name, CursorFactory factory,
@@ -25,10 +25,8 @@ public class BdAlumnos extends SQLiteOpenHelper {
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 		// TODO Auto-generated method stub
 		db.execSQL("DROP TABLE IF EXISTS persona");
-		
+
 		db.execSQL(sqlCrearBd);
 	}
-	
-	
 
 }

@@ -1,7 +1,6 @@
 package com.firecoders.gics.android;
 
 import android.app.Activity;
-import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -55,13 +54,14 @@ public class Main extends Activity {
 
 			}
 		});
-		
+
 		btnEliminar.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				MP_Persona.eliminarPersona(v.getContext(), m_contactos.contactoActual());
+				MP_Persona.eliminarPersona(v.getContext(),
+						m_contactos.contactoActual());
 				loadData();
 				pintarPersona();
 			}
@@ -77,11 +77,10 @@ public class Main extends Activity {
 					.getApmaterno());
 		}
 	}
-	
-	public void loadData()
-	{
+
+	public void loadData() {
 		m_contactos = MP_Persona.loadFromDb(this);
-		//Contactos.cargarBD(this);
+		// Contactos.cargarBD(this);
 
 	}
 

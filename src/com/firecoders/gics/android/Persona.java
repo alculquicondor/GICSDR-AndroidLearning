@@ -1,59 +1,67 @@
 package com.firecoders.gics.android;
 
-import android.R.integer;
 
 public class Persona {
 	private Integer m_id;
 	private String m_nombres;
 	private String m_appaterno;
 	private String apmaterno;
-	
+
 	public Integer getId() {
 		return m_id;
 	}
+
 	public void setId(Integer id) {
 		this.m_id = id;
 	}
+
 	public String getNombres() {
 		return m_nombres;
 	}
+
 	public void setNombres(String nombres) {
 		this.m_nombres = nombres;
 	}
+
 	public String getAppaterno() {
 		return m_appaterno;
 	}
+
 	public void setAppaterno(String appaterno) {
 		this.m_appaterno = appaterno;
 	}
+
 	public String getApmaterno() {
 		return apmaterno;
 	}
+
 	public void setApmaterno(String apmaterno) {
 		this.apmaterno = apmaterno;
 	}
-	
-	
+
 	public Persona() {
 		super();
 		this.m_nombres = "";
 		this.m_appaterno = "";
 		this.apmaterno = "";
 	}
-	public Persona(Integer id, String m_nombres, String appaterno, String apmaterno) {
+
+	public Persona(Integer id, String m_nombres, String appaterno,
+			String apmaterno) {
 		super();
 		this.m_id = id;
 		this.m_nombres = m_nombres;
 		this.m_appaterno = appaterno;
 		this.apmaterno = apmaterno;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Persona [m_id=" + m_id + ", m_nombres=" + m_nombres
 				+ ", m_appaterno=" + m_appaterno + ", apmaterno=" + apmaterno
 				+ "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -67,6 +75,7 @@ public class Persona {
 				+ ((m_nombres == null) ? 0 : m_nombres.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -98,5 +107,5 @@ public class Persona {
 			return false;
 		return true;
 	}
-		
+
 }

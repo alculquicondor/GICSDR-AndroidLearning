@@ -8,7 +8,7 @@ Funcionalidad
 Características
 ===============
 
-Build Target: Android 2.2 + Google APIs (API 8)
+Build Target: Android 2.1 Google APIs (API 7)
 
 To Do
 =====

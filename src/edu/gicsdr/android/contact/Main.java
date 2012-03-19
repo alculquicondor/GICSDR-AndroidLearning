@@ -36,7 +36,6 @@ public class Main extends Activity {
 
 		btnAnterior.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				m_contactos.anteriorContacto();
@@ -46,7 +45,6 @@ public class Main extends Activity {
 
 		btnSiguiente.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				m_contactos.siguienteContacto();
@@ -57,7 +55,6 @@ public class Main extends Activity {
 
 		btnEliminar.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				MP_Persona.eliminarPersona(v.getContext(),
